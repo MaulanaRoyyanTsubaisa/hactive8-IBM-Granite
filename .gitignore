@@ -1,0 +1,68 @@
+# Ignore dependencies
+node_modules/
+
+# ✅ DEPENDENCIES
+node_modules/
+.pnp/
+.pnp.js
+
+# ✅ BUILD OUTPUT
+.next/
+dist/
+out/
+build/
+
+# ✅ ENV FILES
+.env
+.env.local
+.env*
+.env.*  # semua varian: .env.local, .env.production, dll
+
+# ✅ SYSTEM / OS FILES
+.DS_Store
+Thumbs.db
+
+# ✅ LOG FILES
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ✅ IDE & EDITOR JUNK
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ✅ VERSEL / NETLIFY
+.vercel/
+.netlify/
+
+# ✅ AI MODELS / DATASETS / TEMP FILES
+*.ckpt
+*.pth
+*.h5
+*.pt
+*.tflite
+*.onnx
+*.pb
+*.dall*
+*.nv*
+*.safetensors
+__pycache__/
+*.ipynb_checkpoints
+*.cache/
+inference_cache/
+logs/
+checkpoints/
+weights/
+
+# ✅ NEXT AUTH / IMAGES / PUBLIC
+public/tmp/
+public/uploads/
+*.bak
+
+# ✅ BY DEFAULT: SKIP PACKAGE LOCK FILES (optional)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
