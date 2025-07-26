@@ -1,4 +1,4 @@
-# Royyan IBM AI GRANITE
+# Royyan IBM AI GRANITE, Live Preview : https://hactive8-ibm-granite.vercel.app/
 
 Aplikasi web AI Assistant berbasis Next.js, menggunakan IBM watsonx Granite untuk Chatbot dan Code Generation.
 
