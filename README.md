@@ -1,96 +1,87 @@
 # Royyan IBM AI GRANITE, Live Preview : https://hactive8-ibm-granite.vercel.app/
 
-Aplikasi web AI Assistant berbasis Next.js, menggunakan IBM watsonx Granite untuk Chatbot dan Code Generation.
+# 🧠 Granite AI Assistant – Hactive8 x IBM x Maulana Royyan Tsubaisa
+
+A conversational AI web application built with **Next.js 14**, powered by **IBM watsonx Granite 3.3 8B** model via the **Replicate API**. Features include AI-powered chatbot and code generator tabs with a sleek, responsive UI.
 
 ---
 
-## 📋 Deskripsi
+## 📋 Description
 
-Aplikasi ini dibuat untuk tugas Hactive8 oleh **Maulana Royyan Tsubaisa**. Fitur utamanya adalah chatbot AI dan generator kode otomatis, dengan UI modern dan responsif.
+**Granite AI Assistant** is a modern web-based AI interface developed as a final project for the Hactive8 x IBM bootcamp by **Maulana Royyan Tsubaisa**.
 
----
-
-## 🚀 Fitur Utama
-
-- **Chatbot**: Interaksi percakapan dengan AI Granite (IBM) melalui tab Chatbot.
-- **Code Generator**: Menghasilkan kode program otomatis dari prompt pengguna.
-- **Riwayat Chat & Code**: Semua riwayat tersimpan di localStorage browser.
-- **UI Modern**: Menggunakan shadcn/ui, Radix UI, dan TailwindCSS.
-- **Responsif**: Dapat diakses melalui perangkat apa pun.
-- **model**: Menggunakan model IBM Granite 3.3 untuk Chatbot dan Code Generator.
+This app integrates IBM's cutting-edge **Granite 3.3 8B Instruct** language model to provide natural language conversation and code generation capabilities.
 
 ---
 
-## 🗂️ Struktur Folder
+## 🛠️ Technologies Used
 
-```
-app/
-  page.tsx           # Halaman utama (tab Chatbot & Code Generator)
-  layout.tsx         # Layout global aplikasi
-  api/
-    chat/route.ts        # Endpoint chat ke IBM Granite
-    generate/route.ts    # Simulasi response AI
-    generate-code/route.ts # Generate kode via IBM Granite
-components/
-  chatbot-tab.tsx         # Komponen tab Chatbot
-  code-generator-tab.tsx  # Komponen tab Code Generator
-  ui/                     # Komponen UI (button, card, dsb)
-hooks/                    # Custom React hooks
-lib/                      # Utility functions
-public/                   # Asset gambar/logo
-styles/                   # File CSS global
-```
-
----
-
-## ⚙️ Cara Install & Menjalankan
-
-1. **Clone repo**
-2. **Install dependencies**
-   ```bash
-   npm install
-   # atau
-   pnpm install
-   ```
-3. **Jalankan development**
-   ```bash
-   npm run dev
-   # atau
-   pnpm dev
-   ```
-4. **Build production**
-   ```bash
-   npm run build
-   npm start
-   ```
-
----
-
-## 🌐 API Endpoints
-
-- `POST /api/chat` — Chat dengan AI Granite (IBM watsonx, via Replicate API)
-- `POST /api/generate` — Simulasi response AI (untuk testing)
-- `POST /api/generate-code` — Generate kode program via AI Granite
-
----
-
-## 🛠️ Teknologi & Library
-
-- **Next.js 14**
+- **Next.js 14 (App Router)**
 - **React 18**
-- **TailwindCSS**
-- **shadcn/ui** & **Radix UI**
-- **IBM watsonx Granite** (via Replicate API)
 - **TypeScript**
+- **TailwindCSS**
+- **IBM watsonx Granite** via [Replicate API](https://replicate.com/ibm-granite)
+- **Vercel** (deployment ready)
 
 ---
 
-## 👤 Pembuat
+## 🚀 Features
 
-Tugas Hactive8 — dibuat oleh **Maulana Royyan Tsubaisa**
+- 💬 **Chatbot Tab** — Ask anything, get natural responses from IBM Granite.
+- 🧠 **Code Generator Tab** — Generate code snippets from prompts (HTML, JS, etc.).
+- 🧪 **Granite 3.3 8B** — AI model by IBM optimized for code + language understanding.
+- 💾 **Chat History (LocalStorage)** — Session-safe chat logs (client-side).
+- ⚙️ **Responsive UI** — Fully optimized for desktop and mobile.
 
 ---
 
-## 📄 Lisensi
+## ⚙️ Setup Instructions
 
-Project ini untuk keperluan pembelajaran/tugas. Silakan modifikasi sesuai kebutuhan.
+### 1. Clone This Repository
+
+```bash
+git clone https://github.com/MaulanaRoyyanTsubaisa/hactive8-IBM-Granite.git
+cd hactive8-IBM-Granite
+2. Install Dependencies
+npm install
+# or
+pnpm install
+
+3. Setup Environment Variable
+Buat file .env.local dan tambahkan:
+REPLICATE_API_TOKEN=your_replicate_token_here
+Get your token from https://replicate.com/account
+
+4. Run Development Server
+npm run dev
+Akses: http://localhost:3000
+
+🔌 API Endpoints
+Method	Endpoint	Description
+POST	/api/chat	Main chat endpoint (Granite model)
+POST	/api/generate-code	Code generation via prompt
+POST	/api/generate	Simulated response (offline testing)
+
+🤖 AI Support Explanation
+The application uses IBM Granite 3.3 8B Instruct, accessed via the Replicate API. Prompt formatting follows role-based messaging (Human: / Assistant:) and uses polling to handle asynchronous response generation.
+
+This allows the app to deliver:
+
+Natural, human-like responses in chat
+
+Clean, syntactically correct code snippets
+
+Fast and scalable cloud inference
+
+📸 Screenshots
+(Insert screenshots of UI, chatbot, and code generator output here)
+
+👨‍💻 Author
+Built by Maulana Royyan Tsubaisa
+For Hactive8 x IBM Bootcamp Final Project – 2025
+
+📄 License
+This project is open-source for educational purposes. Modify and reuse with credit. No commercial use without permission.
+
+```
+
